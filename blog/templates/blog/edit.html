@@ -1,0 +1,46 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- .container>(.row>.col-md-12>h1{List of articles})+(.row>.col-md-12>table.table>(thead>tr>(th*3))+(tbody>tr>td*3)) -->
+<div class="container">
+  <div class="row mt-3">
+    <div class="col-md-6">
+      <h1>Editer article</h1>
+    </div>
+    <div class="col-md-6 text-end">
+      <a href="{% url 'list_of_articles' %}" class="btn btn-link"
+        >Back to list</a
+      >
+    </div>
+  </div>
+
+  <div class="row my-3">
+    <div class="col-md-12">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni fuga
+        velit maiores doloribus, distinctio quisquam debitis alias rem eius
+        facere dolore repellat nobis veniam perspiciatis mollitia, illum
+        excepturi corporis porro error facilis non! Quam, neque debitis tempore
+        enim aperiam aut in laudantium laboriosam voluptates voluptas ipsam amet
+        dolorem consequatur sit perspiciatis officia doloremque cumque, illo
+        quae velit harum! Nesciunt vitae in cum sequi ad numquam corrupti
+        delectus distinctio earum vero quidem obcaecati enim voluptate dolorem
+        amet quod reiciendis, laborum modi neque similique magnam saepe tempore.
+        Nihil iste cupiditate quis modi aspernatur rerum quibusdam similique
+        nobis, quasi doloremque quisquam aliquam mollitia tempore impedit
+        delectus? Blanditiis voluptas, ab labore impedit odit harum dignissimos
+        earum repellat quasi optio sed, porro iste sint. Rerum numquam ex eos
+        cum possimus molestias corporis ratione autem perspiciatis quasi
+        architecto deserunt a enim dolor placeat blanditiis nobis illum nulla
+        maiores, ad eligendi explicabo. Architecto numquam aspernatur, optio
+        repellendus quas quo quidem, possimus quae eaque consectetur animi. Iure
+        exercitationem eos neque autem ut voluptate quod architecto fugiat,
+        reprehenderit explicabo provident rem praesentium perspiciatis? Dolores
+        laborum blanditiis ab obcaecati maiores debitis alias dolorem deserunt
+        sed ipsam, natus modi quos at ex veniam totam quis nobis iusto impedit
+        laboriosam repellendus velit.
+      </p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

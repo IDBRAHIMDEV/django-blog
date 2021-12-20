@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- .container>(.row>.col-md-12>h1{List of articles})+(.row>.col-md-12>table.table>(thead>tr>(th*3))+(tbody>tr>td*3)) -->
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-6">
+          <h1>Create article</h1>
+        </div>
+        <div class="col-md-6 text-end">
+          <a href="{% url 'list_of_articles' %}" class="btn btn-link">Back to list</a>
+        </div>
+      </div>
+    
+
+  <div class="row my-3">
+    <div class="col-md-12">
+      <form action="" method="POST">
+        
+        {% for field in form %}
+        <div class="form-group">
+          <label for="">{{ field.label }}</label>
+          {{ field }}
+        </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-info">Add article</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
